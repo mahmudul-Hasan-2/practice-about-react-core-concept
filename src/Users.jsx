@@ -10,7 +10,7 @@ export default function Users({ userPromise }) {
     <div>
       <h2>Users: {users.length}</h2>
       {
-        users.map(user => <User user={user}></User>)
+        users.map(user => <User key={user.id} user={user}></User>)
       }
     </div>
   )
